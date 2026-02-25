@@ -19,11 +19,13 @@ for (int i = 0; i < n; i++)
 int maximo = numeros[0]; 
 
 // TODO: Implementar el algoritmo de búsqueda aquí
-int max = numeros[0];
-int len = numeros.Length;
-
-for (int i = 1; i < len; i++)
-    if (numeros[i] > max) max = numeros[i];
+for (int i = 1; i < numeros.Length; i++)
+{
+    if (numeros[i] > maximo)
+    {
+        maximo = numeros[i];
+    }
+}
 // --- FIN DE LÓGICA DEL ALUMNO ---
 
 // 2. Salida: Lo que el Autograding comparará
